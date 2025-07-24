@@ -740,11 +740,11 @@ namespace Microsoft.Xna.Framework.Content
         {
             if (assetNames == null)
             {
-                throw new ArgumentNullException("assetNames");
+                throw new ArgumentNullException(nameof(assetNames));
             }
             if (disposed)
             {
-                throw new ObjectDisposedException("ContentManager");
+                throw new ObjectDisposedException(nameof(ContentManager));
             }
 
             for (int i = 0; i < assetNames.Count; i++)
